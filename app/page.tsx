@@ -142,16 +142,16 @@ export default function ConferencePage() {
   return (
     <div className="min-h-screen">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <nav className="fixed top-0  p-3 left-0 right-0 bg-white shadow-md z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Image 
+            {/*<Image 
               src={logo8}
               alt="College Logo"
               width={40}
               height={40}
               className="h-10 w-auto object-contain rounded-lg"
-            />
+            /> */}
             <span className="font-bold text-gray-800">ICASNXT-25</span>
           </div>
           <div className="hidden md:flex space-x-6">
@@ -202,7 +202,7 @@ export default function ConferencePage() {
               AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
             </h1>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
               International Conference on AI solutions addressing Next Generation Technological Growth (ICASNXT-25)
             </h1>
             
