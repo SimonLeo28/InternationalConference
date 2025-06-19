@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Tech Global 2025',
-  description: 'AIEMS Tech Global 2025',
-  generator: 'Technical Team',
+  title: 'ICASNXT2025',
+  description: 'International Conference AIEMS 2025',
+  generator: 'AIEMS Technical Team',
 }
 
 export default function RootLayout({
