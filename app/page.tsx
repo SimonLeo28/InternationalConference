@@ -41,8 +41,8 @@ export default function ConferencePage() {
   const [registerUrl, setRegisterUrl] = useState('#');
 
 useEffect(() => {
-  if (process.env.REG_LINK) {
-    setRegisterUrl(process.env.REG_LINK);
+  if (true) {
+    setRegisterUrl("https://conference-registration-omega.vercel.app/");
   }
 }, []);
 
