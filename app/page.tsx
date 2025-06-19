@@ -38,6 +38,14 @@ import logo8 from "./logos/logo8.jpg"
 
 export default function ConferencePage() {
 
+  const [registerUrl, setRegisterUrl] = useState('#');
+
+useEffect(() => {
+  if (process.env.REG_LINK) {
+    setRegisterUrl(process.env.REG_LINK);
+  }
+}, []);
+
 
     const schedule = [
     {
@@ -159,7 +167,7 @@ export default function ConferencePage() {
             <Link href="#about-college" className="text-gray-700 hover:text-blue-600 font-medium">About College</Link>
             <Link href="#about-conference" className="text-gray-700 hover:text-blue-600 font-medium">About Conference</Link>
             <Link href="#speakers" className="text-gray-700 hover:text-blue-600 font-medium">Speakers</Link>
-            <Link href="#register" className="text-gray-700 hover:text-blue-600 font-medium">Register</Link>
+            <a href={registerUrl} className="text-gray-700 hover:text-blue-600 font-medium">Register</a>
           </div>
           <button className="md:hidden text-gray-700">
             <Menu className="h-6 w-6" />
@@ -484,13 +492,14 @@ export default function ConferencePage() {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Conference <span className="text-blue-600">Registration</span>
           </h2>
-          <Link href="https://example.com/register" >
+          <a href={registerUrl}>
           <div className="bg-blue-50 rounded-xl p-8 shadow-md">
             <h3 className="text-2xl font-bold text-center">Register for ICASNXT-25</h3>
           </div>
-          </Link>
+          </a>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
@@ -507,7 +516,7 @@ export default function ConferencePage() {
                 <li><Link href="#about-college" className="text-gray-400 hover:text-white">About College</Link></li>
                 <li><Link href="#about-conference" className="text-gray-400 hover:text-white">About Conference</Link></li>
                 <li><Link href="#speakers" className="text-gray-400 hover:text-white">Speakers</Link></li>
-                <li><Link href="#register" className="text-gray-400 hover:text-white">Register</Link></li>
+                <li><a href={registerUrl} className="text-gray-400 hover:text-white">Register</a></li>
               </ul>
             </div>
             <div>
