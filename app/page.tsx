@@ -177,28 +177,19 @@ useEffect(() => {
 
       {/* Hero Section */}
       <section id="home" className="pt-28 md:pt-32 pb-12 md:pb-16 px-4 relative">
-        <div className="absolute top-4 left-0 right-0 flex justify-center z-0 opacity-40">
-          <Image 
-            src={logo1}
-            alt="College Logo"
-            width={200}
-            height={200}
-            className="h-32 m-14 w-auto object-contain"
-          />
-        </div>
-        
+
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="mb-6 flex justify-center items-center gap-8">
               <Image 
-                src={logo8}
+                src={logo1}
                 alt="College Logo"
                 width={120}
                 height={120}
                 className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
               />
               <Image 
-                src={logo1}
+                src={logo8}
                 alt="Partner Logo"
                 width={120}
                 height={120}
@@ -206,11 +197,13 @@ useEffect(() => {
               />
             </div>
             
-            <h1 className="text-lg md:text-xl font-bold text-gray-700 mb-3 md:mb-4">
+            <h1 className="flex flex-col text-lg md:text-2xl font-bold text-gray-700 mb-3 md:mb-4">
               AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
+              <span className="text-lg m-0 p-0">Affiliated by VTU</span>
+              <span className="text-lg">Approved by AICTE</span>
             </h1>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
               International Conference on AI solutions addressing Next Generation Technological Growth (ICASNXT-25)
             </h1>
             
@@ -220,16 +213,10 @@ useEffect(() => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="#register">
+              <Link href={registerUrl}>
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
                   <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Register Now
-                </Button>
-              </Link>
-              <Link href="#about-conference">
-                <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100">
-                  <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  About the Event
                 </Button>
               </Link>
             </div>
@@ -281,13 +268,13 @@ useEffect(() => {
                 />
               </div>
               <div className="md:w-2/3">
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-justify text-lg text-gray-700 mb-4">
                   Amruta Institute of Engineering and Management Sciences (AIEMS) was established in 2008 in Bengaluru
                   and is under the umbrella of Basaveshwara Vidya Vardhak Sangh (BVVS), Bagalkot. AIEMS is the result of the vision of our Chairman Dr Veeranna C Charantimath, 
                   His Holiness Gurubasava Swamiji of Bilur to proactively participate in establishing a world-class Institution for Technical Education. The Campus is on a sprawling 14.35
                   acres of land surrounded by lush green plantations in the Bidadi, Bengaluru City. The institution is affiliated with Visvesvaraya Technological University (VTU), Belagavi, India.
                 </p>
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-justify text-lg text-gray-700 mb-4">
                   Located in Bengaluru, AIEMS offers state-of-the-art facilities, 
                   experienced faculty, and strong industry connections. Our alumni network spans across top 
                   tech companies worldwide.
@@ -334,12 +321,12 @@ useEffect(() => {
                 />
               </div>
               <div className="md:w-2/3">
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-justify text-lg text-gray-700 mb-4">
                   The International Conference on AI solutions addressing Next Generation Technological Growth (ICASNXT-25) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-justify text-lg text-gray-700 mb-4">
                   Scheduled for December 10-12, 2025, this three-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
@@ -487,7 +474,7 @@ useEffect(() => {
       </section>
 
       {/* Registration Section */}
-      <section id="register" className="py-16 bg-white">
+      {/* <section id="register" className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Conference <span className="text-blue-600">Registration</span>
@@ -498,7 +485,7 @@ useEffect(() => {
           </div>
           </a>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Footer */}
