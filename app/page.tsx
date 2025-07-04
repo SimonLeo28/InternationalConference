@@ -199,8 +199,8 @@ useEffect(() => {
             
             <h1 className="flex flex-col text-lg md:text-2xl font-bold text-gray-700 mb-3 md:mb-4">
               AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
-              <span className="text-lg m-0 p-0">Affiliated by VTU</span>
-              <span className="text-lg">Approved by AICTE</span>
+              <span className="text-lg">Approved by AICTE, New Delhi</span>
+              <span className="text-lg m-0 p-0">Recognized by Government of Karnataka & Affiliated to VTU, Belagavi</span>
             </h1>
             
             <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
