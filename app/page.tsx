@@ -150,7 +150,7 @@ useEffect(() => {
   return (
     <div className="min-h-screen">
       {/* Navbar */}
-      <nav className="fixed top-0  p-3 left-0 right-0 bg-white shadow-md z-50">
+      <nav className="fixed top-0  p-1 left-0 right-0 bg-white shadow-md z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             {/*<Image 
@@ -176,7 +176,7 @@ useEffect(() => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-28 md:pt-32 pb-12 md:pb-16 px-4 relative">
+      <section id="home" className="pt-28 md:pt-9 pb-12 md:pb-16 px-4 relative">
 
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
