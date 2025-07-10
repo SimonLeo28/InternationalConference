@@ -168,7 +168,7 @@ useEffect(() => {
             <Link href="#about-college" className="text-gray-700 hover:text-blue-600 font-medium">About College</Link>
             <Link href="#about-conference" className="text-gray-700 hover:text-blue-600 font-medium">About Conference</Link>
             <Link href="#committee" className="text-gray-700 hover:text-blue-600 font-medium">Conference Committee</Link>
-            <a href={registerUrl} className="text-gray-700 hover:text-blue-600 font-medium">Register</a>
+            <a target="_blank" href={registerUrl} className="text-gray-700 hover:text-blue-600 font-medium">Register</a>
           </div>
           <button className="md:hidden text-gray-700">
             <Menu className="h-6 w-6" />
@@ -232,7 +232,7 @@ useEffect(() => {
 
     {/* Buttons */}
     <div className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-6 relative z-10">
-      <Link href={registerUrl}>
+      <Link target="_blank" href={registerUrl}>
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
           Register Now
