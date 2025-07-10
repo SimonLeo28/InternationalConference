@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ICASNXT2025',
-  description: 'International Conference AIEMS 2025',
+  title: 'ICAINXT-26',
+  description: 'International Conference AIEMS 2026',
   generator: 'AIEMS Technical Team',
 }
 

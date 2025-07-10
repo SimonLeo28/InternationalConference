@@ -5,26 +5,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  Calendar,
-  MapPin,
-  Users,
-  Globe,
-  Clock,
-  Star,
-  ArrowRight,
-  Play,
-  Mic,
-  Video,
-  Coffee,
-  Award,
-  Ticket,
-  Mail,
-  Menu,
-  CheckCircle,
-} from "lucide-react"
+import { Calendar, MapPin, Users, Globe, Clock, Star, ArrowRight, Play, Mic, Video, Coffee, Award, Ticket, Mail, Menu, CheckCircle, } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+
+{/** Importing Images */}
 import clgLogo from "./logos/CollegeLogo.jpg"
 import logo1 from "./logos/logo1.jpg"
 import logo2 from "./logos/logo2.jpg"
@@ -34,6 +19,8 @@ import logo5 from "./logos/logo5.jpg"
 import logo6 from "./logos/logo6.jpg"
 import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
+import Hero from "./Images/hero.jpg"
+import Flyer from "./Images/ConferencePoster.jpg"
 
 
 export default function ConferencePage() {
@@ -133,13 +120,27 @@ useEffect(() => {
     },
     {
       time: "12",
-      title: "AI in Management",
+      title: "AI Applications in Healthcare, Agriculture & Education",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
       time: "13",
+      title: "AI E-Governance",
+      type: "talk",
+      speaker: "",
+      description: "Exploring the next decade of AI innovation",
+    },
+    {
+      time: "14",
+      title: "Cyber Security",
+      type: "talk",
+      speaker: "",
+      description: "Exploring the next decade of AI innovation",
+    },
+    {
+      time: "15",
       title: "Business Management, Business Analytics & Sustainable Management Practices.",
       type: "talk",
       speaker: "",
@@ -160,13 +161,13 @@ useEffect(() => {
               height={40}
               className="h-10 w-auto object-contain rounded-lg"
             /> */}
-            <span className="font-bold text-gray-800">ICASNXT-25</span>
+            <span className="font-bold text-gray-800">ICAINXT-26</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <Link href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
             <Link href="#about-college" className="text-gray-700 hover:text-blue-600 font-medium">About College</Link>
             <Link href="#about-conference" className="text-gray-700 hover:text-blue-600 font-medium">About Conference</Link>
-            <Link href="#speakers" className="text-gray-700 hover:text-blue-600 font-medium">Speakers</Link>
+            <Link href="#committee" className="text-gray-700 hover:text-blue-600 font-medium">Conference Committee</Link>
             <a href={registerUrl} className="text-gray-700 hover:text-blue-600 font-medium">Register</a>
           </div>
           <button className="md:hidden text-gray-700">
@@ -176,53 +177,69 @@ useEffect(() => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-28 md:pt-9 pb-12 md:pb-16 px-4 relative">
+        <section id="home" className="h-screen pt-28 md:pt-9 relative overflow-hidden">
+  {/* Background image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${Hero.src})` }}   // <— note the .src
+    aria-hidden="true"
+  />
 
-        <div className="container mx-auto text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-6 flex justify-center items-center gap-8">
-              <Image 
-                src={logo1}
-                alt="College Logo"
-                width={120}
-                height={120}
-                className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
-              />
-              <Image 
-                src={logo8}
-                alt="Partner Logo"
-                width={120}
-                height={120}
-                className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
-              />
-            </div>
-            
-            <h1 className="flex flex-col text-lg md:text-2xl font-bold text-gray-700 mb-3 md:mb-4">
-              AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
-              <span className="text-lg">Approved by AICTE, New Delhi</span>
-              <span className="text-lg m-0 p-0">Recognized by Government of Karnataka & Affiliated to VTU, Belagavi</span>
-            </h1>
-            
-            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-              International Conference on AI solutions addressing Next Generation Technological Growth (ICASNXT-25)
-            </h1>
-            
-            <p className="text-base sm:text-lg text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
-              Join 5,000+ innovators, researchers, and visionaries from 50+ countries for three days of groundbreaking
-              discoveries and global collaboration.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href={registerUrl}>
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
-                  <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  Register Now
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* Optional dark overlay for better text contrast */}
+  <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+
+  {/* Content on top of the background */}
+  <div className="relative container mx-auto px-4 py-12 md:py-16 text-center z-10">
+    <div className="mb-6 flex justify-center items-center gap-8">
+      <Image
+        src={logo1}
+        alt="College Logo"
+        width={120}
+        height={120}
+        className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+      />
+      <Image
+        src={logo8}
+        alt="Partner Logo"
+        width={120}
+        height={120}
+        className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+      />
+    </div>
+
+    <h1 className="flex flex-col text-lg md:text-2xl font-bold text-gray-100 mb-3 md:mb-4">
+      AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
+      <span className="text-lg">Approved by AICTE, New Delhi</span>
+      <span className="text-lg m-0 p-0">
+        Recognized by Government of Karnataka & Affiliated to VTU, Belagavi
+      </span>
+    </h1>
+
+    <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+      International Conference on AI Innovations for Next Generation Technologies ICAINXT-26
+    </h1>
+
+    <p className="text-base sm:text-lg text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto">
+      Join 5,000+ innovators, researchers, and visionaries from 50+ countries
+      for three days of groundbreaking discoveries and global collaboration.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+      <Link href={registerUrl}>
+        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
+          <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+          Register Now
+        </Button>
+      </Link>
+      <a href={Flyer.src} target="_blank" rel="noopener noreferrer">
+        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
+          <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+          View Flyer
+        </Button>
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* Partners Section */}
       <section id="partners" className="py-12 bg-white border-y border-gray-200">
@@ -231,7 +248,7 @@ useEffect(() => {
             Affiliated By
           </h2>
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 items-center">
             {[logo2, logo3, logo4, logo5, logo6, logo7].map((logo, index) => (
               <div 
                 key={index} 
@@ -290,7 +307,7 @@ useEffect(() => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>10+ Academic Programs</span>
+                    <span>5+ Academic Programs</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
@@ -308,7 +325,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              About <span className="text-blue-600">ICASNXT-25</span>
+              About <span className="text-blue-600">ICAINXT-26</span>
             </h2>
             <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
               <div className="md:w-1/3">
@@ -322,7 +339,7 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The International Conference on AI solutions addressing Next Generation Technological Growth (ICASNXT-25) 
+                  The International Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-26) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
@@ -330,21 +347,31 @@ useEffect(() => {
                   Scheduled for December 10-12, 2025, this three-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
-                <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-gray-800">December 10-12, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">August 30, 2025</h3>
+                    <p className="text-sm text-gray-600">Abstract submission Deadline</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">September 30, 2025</h3>
+                    <p className="text-sm text-gray-600">Submission Deadline</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">October 30, 2025</h3>
+                    <p className="text-sm text-gray-600">Notification of Acceptance</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">November 15, 2025</h3>
+                    <p className="text-sm text-gray-600">Registration Deadline</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">January 9 and 10, 2026</h3>
                     <p className="text-sm text-gray-600">Conference Dates</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg text-center">
-                    <Users className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-gray-800">50+ Countries</h3>
-                    <p className="text-sm text-gray-600">Global Participation</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg text-center">
-                    <Mic className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-gray-800">30+ Speakers</h3>
-                    <p className="text-sm text-gray-600">Industry Leaders</p>
                   </div>
                 </div>
               </div>
@@ -353,30 +380,109 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Speakers Section (Placeholder) */}
+      {/* Organizing Committee Section */}
+<section id="committee" className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      Conference <span className="text-blue-600">Organizers & Boards</span>
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      {/* Chief Patrons */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">Chief Patrons</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Shri Dr. Veeranna C. Charantimath</li>
+          <li>Dr. S. Vidyashankar – Vice Chancellor, VTU</li>
+        </ul>
+      </div>
+
+      {/* Patrons */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">Patrons</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Shri Mahesh N Athani – Hon. Secretary, BVVS</li>
+          <li>Sri. Mahantesh S Shettar – Governing Council Chairman, AIEMS</li>
+          <li>Dr. Rangaswamy B E – Registrar (Academics), VTU</li>
+          <li>Dr. T. N. Sreenivasa – Registrar (Evaluation), VTU</li>
+        </ul>
+      </div>
+
+      {/* General Chair */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">General Chair</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Dr. Santosh M Muranal – Principal, AIEMS</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-blue-700 mt-6 mb-3">General Co-Chair</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Dr. RSK – Dean Academic, AIEMS</li>
+        </ul>
+      </div>
+
+      {/* Organizing Chair */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">Organizing Chair</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Dr. Kumar B I D – Professor & HoD, ISE Dept, AIEMS</li>
+        </ul>
+      </div>
+
+      {/* Technical Program Committee */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">Technical Program Committee</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Dr. Pratibhadevi Tapashetti – Professor, Dept of ECE, AIEMS</li>
+          <li>Dr. Mahantesh Mathapati – Professor, Dept. of CSE, AIEMS</li>
+          <li>Dr. Vinod Kumar Biradar – Associate Professor, Mechanical, AIEMS</li>
+          <li>Mrs. Arpitha G C – Assistant Professor, Civil, AIEMS</li>
+          <li>Mr. Kiran Suraj S. – Assistant Professor, MBA, AIEMS</li>
+        </ul>
+      </div>
+
+      {/* Organizing Program Committee */}
+      <div>
+        <h3 className="text-xl font-semibold text-blue-700 mb-3">Organizing Program Committee</h3>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Dr. Shreedhara – Professor & HoD, CSE, AIEMS</li>
+          <li>Dr. Veeresh Patil – Professor & HoD, E&C, AIEMS</li>
+          <li>Dr. Rudra Murthy – Professor & HoD, Civil, AIEMS</li>
+          <li>Dr. Dr. Pradeep – Professor & HoD, MBA, AIEMS</li>
+          <li>Mr. Shreyas Shivananjappa – Assistant Professor, HOD Basic Science, AIEMS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      {/* Speakers Section (Placeholder)
       <section id="speakers" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Featured <span className="text-blue-600">Speakers</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Speaker cards would go here */}
+            {/* Speaker cards would go here 
             <div className="text-center">
               <div className="bg-gray-200 h-64 w-64 mx-auto rounded-full mb-4"></div>
               <h3 className="text-xl font-bold">Speaker Name</h3>
               <p className="text-gray-600">Position, Company</p>
             </div>
-            {/* Add more speaker cards */}
+            {/* Add more speaker cards 
           </div>
         </div>
-      </section>
+      </section> */}
 
             {/* Schedule Section */}
       <section id="schedule" className="py-16 sm:py-20 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-6">Conference Themes</h2>
-            <p className="text-base sm:text-lg text-gray-600">Real Time Based Themes</p>
+            <p className="text-base sm:text-lg text-gray-600">Authors are invited to contribute to the conference by 
+              submitting original articles that showcase research findings, project outcomes, experimental studies, and
+              industrial experiences. Submissions may cover, but are not limited to, the following thematic areas.</p>
           </div>
 
           <Tabs defaultValue="day1" className="max-w-4xl mx-auto">
@@ -409,7 +515,7 @@ useEffect(() => {
                       <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                         <div className="flex items-center gap-2 text-blue-600 min-w-[100px] sm:min-w-[120px]">
                           <Clock className="h-4 w-4" />
-                          <span className="text-sm font-medium">Session {item.time}</span>
+                          <span className="text-sm font-medium">Theme {item.time}</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
@@ -432,7 +538,7 @@ useEffect(() => {
                       <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                         <div className="flex items-center gap-2 text-blue-600 min-w-[100px] sm:min-w-[120px]">
                           <Clock className="h-4 w-4" />
-                          <span className="text-sm font-medium">Session {item.time}</span>
+                          <span className="text-sm font-medium">Theme {item.time}</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
@@ -455,7 +561,7 @@ useEffect(() => {
                       <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                         <div className="flex items-center gap-2 text-blue-600 min-w-[100px] sm:min-w-[120px]">
                           <Clock className="h-4 w-4" />
-                          <span className="text-sm font-medium">Session {item.time}</span>
+                          <span className="text-sm font-medium">Theme {item.time}</span>
                         </div>
                         <div className="flex-1">
                           <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
@@ -493,7 +599,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">ICASNXT-25</h3>
+              <h3 className="text-xl font-bold mb-4">ICAINXT-26</h3>
               <p className="text-gray-400">International Conference on AI solutions addressing Next Generation Technological Growth</p>
             </div>
             <div>
@@ -509,15 +615,17 @@ useEffect(() => {
             <div>
               <h3 className="text-xl font-bold mb-4">Contact</h3>
               <address className="text-gray-400 not-italic">
+                Dr. Kumar B I D<br />
+                Professor & HoD, ISE Dept<br />
                 Amruta Institute of Engineering and Management Sciences<br />
-                Bangalore, India<br />
-                Email: contact@aiems.edu<br />
-                Phone: +91 1234567890
+                Bangalore, Karnataka, India<br />
+                Email: dr.kumarbid@aiems.edu.in<br />
+                Phone: +91 78924 38079
               </address>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2025 ICASNXT-25. All rights reserved.</p>
+            <p>© 2025 ICAINXT-26. All rights reserved.</p>
           </div>
         </div>
       </footer>
