@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Calendar, MapPin, Users, Globe, Clock, Star, ArrowRight, Play, Mic, Video, Coffee, Award, Ticket, Mail, Menu, CheckCircle, } from "lucide-react"
+import { CalendarDays, Calendar, MapPin, Users, Globe, Clock, Star, ArrowRight, Play, Mic, Video, Coffee, Award, Ticket, Mail, Menu, CheckCircle, } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -177,69 +177,90 @@ useEffect(() => {
       </nav>
 
       {/* Hero Section */}
-        <section id="home" className="h-screen pt-28 md:pt-9 relative overflow-hidden">
+      <section id="home" className="min-h-screen pt-24 md:pt-12 relative overflow-hidden">
   {/* Background image */}
   <div
     className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: `url(${Hero.src})` }}   // <— note the .src
+    style={{ backgroundImage: `url(${Hero.src})` }}
     aria-hidden="true"
   />
 
-  {/* Optional dark overlay for better text contrast */}
-  <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+  {/* Optional dark overlay */}
+  <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
 
-  {/* Content on top of the background */}
-  <div className="relative container mx-auto px-4 py-12 md:py-16 text-center z-10">
-    <div className="mb-6 flex justify-center items-center gap-8">
+  {/* Content */}
+  <div className="relative container mx-auto px-4 py-10 sm:py-12 md:py-16 text-center z-10">
+    {/* Logos */}
+    <div className="mb-8 flex flex-col sm:flex-row justify-center items-center gap-y-4 sm:gap-x-8">
       <Image
         src={logo1}
         alt="College Logo"
-        width={120}
-        height={120}
-        className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+        width={100}
+        height={100}
+        className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
       />
       <Image
         src={logo8}
         alt="Partner Logo"
-        width={120}
-        height={120}
-        className="h-20 mt-20 w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+        width={100}
+        height={100}
+        className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
       />
     </div>
 
-    <h1 className="flex flex-col text-lg md:text-2xl font-bold text-gray-100 mb-3 md:mb-4">
+    {/* Institute Name */}
+    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-100 mb-2">
       AMRUTA INSTITUTE OF ENGINEERING AND MANAGEMENT SCIENCES
-      <span className="text-lg">Approved by AICTE, New Delhi</span>
-      <span className="text-lg m-0 p-0">
-        Recognized by Government of Karnataka & Affiliated to VTU, Belagavi
-      </span>
     </h1>
+    <p className="text-sm sm:text-base text-gray-200 mb-1">
+      Approved by AICTE, New Delhi
+    </p>
+    <p className="text-sm sm:text-base text-gray-200 mb-4">
+      Recognized by Government of Karnataka & Affiliated to VTU, Belagavi
+    </p>
 
-    <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+    {/* Conference Title */}
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
       International Conference on AI Innovations for Next Generation Technologies ICAINXT-26
-    </h1>
+    </h2>
 
-    <p className="text-base sm:text-lg text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto">
+    {/* Description */}
+    <p className="text-sm sm:text-lg text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto">
       Join 5,000+ innovators, researchers, and visionaries from 50+ countries
       for three days of groundbreaking discoveries and global collaboration.
     </p>
 
-    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+    {/* Buttons */}
+    <div className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-6 relative z-10">
       <Link href={registerUrl}>
-        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
+        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-          Register Now
+          Register Now
         </Button>
       </Link>
       <a href={Flyer.src} target="_blank" rel="noopener noreferrer">
-        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8">
+        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
           View Flyer
         </Button>
       </a>
     </div>
+
+    {/* Date & Location */}
+    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center text-gray-300">
+      <div className="flex items-center">
+        <CalendarDays className="h-5 w-5 mr-2" />
+        <span className="font-medium">09th and 10th January 2026</span>
+      </div>
+      <div className="flex items-center">
+        <MapPin className="h-5 w-5 mr-2" />
+        <span className="font-medium">AIEMS, Bengaluru</span>
+      </div>
+    </div>
   </div>
 </section>
+
+
 
       {/* Partners Section */}
       <section id="partners" className="py-12 bg-white border-y border-gray-200">
