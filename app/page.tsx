@@ -438,7 +438,7 @@ useEffect(() => {
         </ul>
         <h3 className="text-xl font-semibold text-blue-700 mt-6 mb-3">General Co-Chair</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Dr. RSK – Dean Academic, AIEMS</li>
+          <li>Dr. Rajeshwar S Kadadevaramath – Dean Academic, AIEMS</li>
         </ul>
       </div>
 
@@ -459,6 +459,8 @@ useEffect(() => {
           <li>Dr. Vinod Kumar Biradar – Associate Professor, Mechanical, AIEMS</li>
           <li>Mrs. Arpitha G C – Assistant Professor, Civil, AIEMS</li>
           <li>Mr. Kiran Suraj S. – Assistant Professor, MBA, AIEMS</li>
+          <li>Mrs. Sangeetha N, A, Assistant Professor, Dept. of AIML, AIEMS</li>
+          <li>Mr. Siddharamanna S C, Assistant Professor, Dept. of Basic Science, AIEMS</li>
         </ul>
       </div>
 
@@ -469,8 +471,8 @@ useEffect(() => {
           <li>Dr. Shreedhara – Professor & HoD, CSE, AIEMS</li>
           <li>Dr. Veeresh Patil – Professor & HoD, E&C, AIEMS</li>
           <li>Dr. Rudra Murthy – Professor & HoD, Civil, AIEMS</li>
-          <li>Dr. Dr. Pradeep – Professor & HoD, MBA, AIEMS</li>
-          <li>Mr. Shreyas Shivananjappa – Assistant Professor, HOD Basic Science, AIEMS</li>
+          <li>Dr. Pradeep N E – Professor & HoD, MBA, AIEMS</li>
+          <li>Mr. Shreyas Shivananjappa – Assistant Professor, HOD AIML & Basic Science, AIEMS</li>
         </ul>
       </div>
     </div>
