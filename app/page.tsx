@@ -191,7 +191,7 @@ useEffect(() => {
   {/* Content */}
   <div className="relative container mx-auto px-4 py-10 sm:py-12 md:py-16 text-center z-10">
     {/* Logos */}
-    <div className="mb-8 flex flex-col sm:flex-row justify-center items-center gap-y-4 sm:gap-x-8">
+    <div className="mb-8 flex flex-row gap-10 sm:flex-row justify-center items-center gap-y-4 sm:gap-x-8">
       <Image
         src={logo1}
         alt="College Logo"
