@@ -235,7 +235,7 @@ useEffect(() => {
       <Link target="_blank" href={registerUrl}>
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-          Register Now
+          Submissions
         </Button>
       </Link>
       <a href={Flyer.src} target="_blank" rel="noopener noreferrer">
@@ -365,24 +365,29 @@ useEffect(() => {
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  Scheduled for December 10-12, 2025, this three-day conference will feature keynote speeches, technical 
+                  Scheduled for January 09-10, 2026, this two-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
-                <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">August 30, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">August 15, 2025</h3>
                     <p className="text-sm text-gray-600">Abstract submission Deadline</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">August 30, 2025</h3>
+                    <p className="text-sm text-gray-600">Notification of Abstract Acceptance</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">September 30, 2025</h3>
-                    <p className="text-sm text-gray-600">Submission Deadline</p>
+                    <p className="text-sm text-gray-600">Submission of Full Paper Deadline</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">October 30, 2025</h3>
-                    <p className="text-sm text-gray-600">Notification of Acceptance</p>
+                    <p className="text-sm text-gray-600">Notification of Paper Acceptance</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
@@ -456,11 +461,11 @@ useEffect(() => {
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Dr. Pratibhadevi Tapashetti – Professor, Dept of ECE, AIEMS</li>
           <li>Dr. Mahantesh Mathapati – Professor, Dept. of CSE, AIEMS</li>
-          <li>Dr. Vinod Kumar Biradar – Associate Professor, Mechanical, AIEMS</li>
+          <li>Dr. Vinod Kumar Biradar – Associate Professor, MECH, AIEMS</li>
           <li>Mrs. Arpitha G C – Assistant Professor, Civil, AIEMS</li>
-          <li>Mr. Kiran Suraj S. – Assistant Professor, MBA, AIEMS</li>
-          <li>Mrs. Sangeetha N, A, Assistant Professor, Dept. of AIML, AIEMS</li>
-          <li>Mr. Siddharamanna S C, Assistant Professor, Dept. of Basic Science, AIEMS</li>
+          <li>Mr. Kiran Suraj S – Assistant Professor, MBA, AIEMS</li>
+          <li>Mrs. Sangeetha N A – Assistant Professor, AIML, AIEMS</li>
+          <li>Mr. Siddharamanna S C – Assistant Professor, Dept. of Basic Science, AIEMS</li>
         </ul>
       </div>
 
