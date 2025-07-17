@@ -20,7 +20,7 @@ import logo6 from "./logos/logo6.jpg"
 import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
 import Hero from "./Images/hero1.jpg"
-import Flyer from "./Images/ConferencePoster.jpg"
+import Flyer from "./Images/International_Conference image.jpg"
 
 
 export default function ConferencePage() {
