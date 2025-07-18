@@ -21,6 +21,7 @@ import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
 import Hero from "./Images/hero1.jpg"
 import Flyer from "./Images/icainxtpic.jpg"
+import Springer from "./Images/springer.jpg"
 
 
 export default function ConferencePage() {
@@ -202,6 +203,13 @@ useEffect(() => {
       />
       <Image
         src={logo8}
+        alt="Partner Logo"
+        width={100}
+        height={100}
+        className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+      />
+      <Image
+        src={Springer}
         alt="Partner Logo"
         width={100}
         height={100}
