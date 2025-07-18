@@ -20,7 +20,7 @@ import logo6 from "./logos/logo6.jpg"
 import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
 import Hero from "./Images/hero1.jpg"
-import Flyer from "./Images/ICAINXT-26 Poster2.jpg"
+import Flyer from "./Images/icainxtpic.jpg"
 
 
 export default function ConferencePage() {
@@ -168,6 +168,7 @@ useEffect(() => {
             <Link href="#about-college" className="text-gray-700 hover:text-blue-600 font-medium">About College</Link>
             <Link href="#about-conference" className="text-gray-700 hover:text-blue-600 font-medium">About Conference</Link>
             <Link href="#committee" className="text-gray-700 hover:text-blue-600 font-medium">Conference Committee</Link>
+            <Link href="#schedule" className="text-gray-700 hover:text-blue-600 font-medium">Themes</Link>
             <a target="_blank" href={registerUrl} className="text-gray-700 hover:text-blue-600 font-medium">Register</a>
           </div>
           <button className="md:hidden text-gray-700">
@@ -221,7 +222,7 @@ useEffect(() => {
 
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-      International Conference on AI Innovations for Next Generation Technologies ICAINXT-26
+      International Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
     </h2>
 
     {/* Description */}
@@ -266,7 +267,7 @@ useEffect(() => {
       <section id="partners" className="py-12 bg-white border-y border-gray-200">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8">
-            Affiliated By
+            Affiliations
           </h2>
           
           <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 items-center">
@@ -503,7 +504,7 @@ useEffect(() => {
         </div>
       </section> */}
 
-            {/* Schedule Section */}
+            {/* Theme Section */}
       <section id="schedule" className="py-16 sm:py-20 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -628,7 +629,9 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
               <h3 className="text-xl font-bold mb-4">ICAINXT-26</h3>
-              <p className="text-gray-400">International Conference on AI solutions addressing Next Generation Technological Growth</p>
+              <p className="text-gray-400">International Conference on AI Innovations for Next Generation Technologies</p>
+              <br/>
+              <p >Email: <Link href="mailto:icainxt@aiems.edu.in" className=" text-gray-400 hover:underline">icainxt@aiems.edu.in</Link></p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -648,7 +651,7 @@ useEffect(() => {
                 ICAINXT-26 Organizing Chair<br />
                 Amruta Institute of Engineering and Management Sciences<br />
                 Bangalore, Karnataka, India<br />
-                Email: dr.kumarbid@aiems.edu.in<br />
+                Email: <Link href="mailto:dr.kumarbid@aiems.edu.in" className="text-blue-500 hover:underline">dr.kumarbid@aiems.edu.in</Link><br />
                 Phone: +91 78924 38079
               </address>
             </div>
