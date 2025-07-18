@@ -20,7 +20,7 @@ import logo6 from "./logos/logo6.jpg"
 import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
 import Hero from "./Images/hero1.jpg"
-import Flyer from "./Images/International_Conference image.jpg"
+import Flyer from "./Images/ICAINXT-26 Poster2.jpg"
 
 
 export default function ConferencePage() {
@@ -625,7 +625,7 @@ useEffect(() => {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
               <h3 className="text-xl font-bold mb-4">ICAINXT-26</h3>
               <p className="text-gray-400">International Conference on AI solutions addressing Next Generation Technological Growth</p>
@@ -645,6 +645,7 @@ useEffect(() => {
               <address className="text-gray-400 not-italic">
                 Dr. Kumar B I D<br />
                 Professor & HoD, ISE Dept<br />
+                ICAINXT-26 Organizing Chair<br />
                 Amruta Institute of Engineering and Management Sciences<br />
                 Bangalore, Karnataka, India<br />
                 Email: dr.kumarbid@aiems.edu.in<br />
