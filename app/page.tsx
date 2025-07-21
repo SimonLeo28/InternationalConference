@@ -231,7 +231,7 @@ useEffect(() => {
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
       International Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
-      <br /> <span className="text-[40px]">Hybrid Conference</span>
+      <br /> <span className="text-[40px]">(Hybrid Conference)</span>
     </h2>
 
     {/* Description */}
