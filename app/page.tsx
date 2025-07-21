@@ -231,6 +231,7 @@ useEffect(() => {
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
       International Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
+      <br /> <span className="text-[40px]">Hybrid Conference</span>
     </h2>
 
     {/* Description */}
@@ -263,7 +264,7 @@ useEffect(() => {
       </div>
       <div className="flex items-center">
         <MapPin className="h-5 w-5 mr-2" />
-        <span className="font-medium">AIEMS, Bengaluru</span>
+        <span className="font-medium">AIEMS, Bidadi, Bengaluru</span>
       </div>
     </div>
   </div>
@@ -484,8 +485,8 @@ useEffect(() => {
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Dr. Shreedhara – Professor & HoD, CSE, AIEMS</li>
           <li>Dr. Veeresh Patil – Professor & HoD, E&C, AIEMS</li>
-          <li>Dr. Rudra Murthy – Professor & HoD, Civil, AIEMS</li>
           <li>Dr. Pradeep N E – Professor & HoD, MBA, AIEMS</li>
+          <li>Mr. Rudra Murthy – Professor & HoD, Civil, AIEMS</li>
           <li>Mr. Shreyas Shivananjappa – Assistant Professor, HOD AIML & Basic Science, AIEMS</li>
         </ul>
       </div>
