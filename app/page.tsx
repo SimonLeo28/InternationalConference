@@ -69,7 +69,7 @@ useEffect(() => {
       title: "AI Applications in Healthcare, Agriculture & Education",
       type: "talk",
       speaker: "",
-      description: "International cuisine and connections",
+      description: "National cuisine and connections",
     },
   ]
 
@@ -107,7 +107,7 @@ useEffect(() => {
       title: "VLSI Design & Embedded Systems",
       type: "talk",
       speaker: "",
-      description: "International cuisine and connections",
+      description: "National cuisine and connections",
     },
   ]
 
@@ -208,13 +208,6 @@ useEffect(() => {
         height={100}
         className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
       />
-      <Image
-        src={Springer}
-        alt="Partner Logo"
-        width={100}
-        height={100}
-        className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
-      />
     </div>
 
     {/* Institute Name */}
@@ -230,7 +223,7 @@ useEffect(() => {
 
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-      International Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
+      National Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
       <br /> <span className="text-[40px]">(Hybrid Conference)</span>
     </h2>
 
@@ -370,7 +363,7 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The International Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-26) 
+                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-26) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
@@ -638,7 +631,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
               <h3 className="text-xl font-bold mb-4">ICAINXT-26</h3>
-              <p className="text-gray-400">International Conference on AI Innovations for Next Generation Technologies</p>
+              <p className="text-gray-400">National Conference on AI Innovations for Next Generation Technologies</p>
               <br/>
               <p >Email: <Link href="mailto:icainxt@aiems.edu.in" className=" text-gray-400 hover:underline">icainxt@aiems.edu.in</Link></p>
             </div>
