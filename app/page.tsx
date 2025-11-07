@@ -162,7 +162,7 @@ useEffect(() => {
               height={40}
               className="h-10 w-auto object-contain rounded-lg"
             /> */}
-            <span className="font-bold text-gray-800">ICAINXT-26</span>
+            <span className="font-bold text-gray-800">ICAINXT-25</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <Link href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
@@ -223,7 +223,7 @@ useEffect(() => {
 
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-      National Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-26)</span>
+      National Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-25)</span>
       <br /> <span className="text-[40px]">(Hybrid Conference)</span>
     </h2>
 
@@ -253,7 +253,7 @@ useEffect(() => {
     <div className="flex flex-col sm:flex-row gap-3 justify-center items-center text-gray-300">
       <div className="flex items-center">
         <CalendarDays className="h-5 w-5 mr-2" />
-        <span className="font-medium">09th and 10th January 2026</span>
+        <span className="font-medium">28th and 29th November 2025</span>
       </div>
       <div className="flex items-center">
         <MapPin className="h-5 w-5 mr-2" />
@@ -349,7 +349,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              About <span className="text-blue-600">ICAINXT-26</span>
+              About <span className="text-blue-600">ICAINXT-25</span>
             </h2>
             <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
               <div className="md:w-1/3">
@@ -368,7 +368,7 @@ useEffect(() => {
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  Scheduled for January 09-10, 2026, this two-day conference will feature keynote speeches, technical 
+                  Scheduled for November 28-29, 2025, this two-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -399,7 +399,7 @@ useEffect(() => {
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">January 9 and 10, 2026</h3>
+                    <h3 className="font-bold text-sm text-gray-800">November 28-29, 2025</h3>
                     <p className="text-sm text-gray-600">Conference Dates</p>
                   </div>
                 </div>
@@ -630,7 +630,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
-              <h3 className="text-xl font-bold mb-4">ICAINXT-26</h3>
+              <h3 className="text-xl font-bold mb-4">ICAINXT-25</h3>
               <p className="text-gray-400">National Conference on AI Innovations for Next Generation Technologies</p>
               <br/>
               <p >Email: <Link href="mailto:icainxt@aiems.edu.in" className=" text-gray-400 hover:underline">icainxt@aiems.edu.in</Link></p>
