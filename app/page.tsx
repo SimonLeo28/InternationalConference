@@ -374,20 +374,20 @@ useEffect(() => {
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">August 15, 2025</h3>
-                    <p className="text-sm text-gray-600">Abstract submission Deadline</p>
+                    <h3 className="font-bold text-sm text-gray-800">November 15, 2025</h3>
+                    <p className="text-sm text-gray-600">Paper submission Deadline</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">August 30, 2025</h3>
-                    <p className="text-sm text-gray-600">Notification of Abstract Acceptance</p>
+                    <h3 className="font-bold text-sm text-gray-800">November 20, 2025</h3>
+                    <p className="text-sm text-gray-600">Notification of Paper Acceptance</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">September 30, 2025</h3>
-                    <p className="text-sm text-gray-600">Submission of Full Paper Deadline</p>
+                    <h3 className="font-bold text-sm text-gray-800">November 22, 2025</h3>
+                    <p className="text-sm text-gray-600">Registration Deadline</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                  {/* <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">October 30, 2025</h3>
                     <p className="text-sm text-gray-600">Notification of Paper Acceptance</p>
@@ -396,7 +396,7 @@ useEffect(() => {
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">November 15, 2025</h3>
                     <p className="text-sm text-gray-600">Registration Deadline</p>
-                  </div>
+                  </div> */}
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">November 28-29, 2025</h3>
