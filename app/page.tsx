@@ -363,7 +363,7 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-26) 
+                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-25) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
