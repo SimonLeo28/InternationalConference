@@ -21,7 +21,7 @@ import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
 import Hero from "./Images/hero1.jpg"
 import Flyer from "./Images/icainxtpic.jpg"
-import Springer from "./Images/springer.jpg"
+import AIP from "./Images/springer.jpg"
 
 
 export default function ConferencePage() {
@@ -38,35 +38,91 @@ useEffect(() => {
     const schedule = [
     {
       time: "1",
-      title: "Artificial Intelligence and Data Science",
+      title: "Adversarial machine learning",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
       time: "2",
-      title: "Advanced Computing & Networking",
+      title: "Robust AI models for critical systems",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
       time: "3",
-      title: "Cloud Computing",
+      title: "Secure deep learning architectures",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
     },
     {
       time: "4",
-      title: "Cyber Security",
+      title: "Privacy-preserving AI",
       type: "talk",
       speaker: "",
       description: "Latest advances in quantum technology",
     },
     {
       time: "5",
-      title: "AI Applications in Healthcare, Agriculture & Education",
+      title: "Federated learning and secure distributed AI",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "6",
+      title: "AI security in cyber-physical systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "7",
+      title: "Explainable and trustworthy AI",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "8",
+      title: "Mathematical modeling of engineering systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "9",
+      title: "Numerical methods and optimization techniques",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "10",
+      title: "Intelligent optimization algorithms",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "11",
+      title: "Simulation-based AI frameworks",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "12",
+      title: "Hybrid AI–physics models",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "13",
+      title: "Data-driven modeling of dynamic systems",
       type: "talk",
       speaker: "",
       description: "National cuisine and connections",
@@ -75,36 +131,92 @@ useEffect(() => {
 
   const schedule1 = [
     {
-      time: "6",
-      title: "Advanced Communication systems and Image Processing",
+      time: "14",
+      title: "High-performance computing for AI applications",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
-      time: "7",
-      title: "Robotics and Automation",
+      time: "15",
+      title: "Secure edge and cloud computing frameworks",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "8",
-      title: "AI E-Governance",
+      time: "16",
+      title: "Blockchain-enabled secure systems",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
     },
     {
-      time: "9",
-      title: "Advanced Manufacturing and Operations Technologies",
+      time: "17",
+      title: "Secure IoT and embedded systems",
       type: "talk",
       speaker: "",
       description: "Latest advances in quantum technology",
     },
     {
-      time: "10",
-      title: "VLSI Design & Embedded Systems",
+      time: "18",
+      title: "Cybersecurity in intelligent networks",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "19",
+      title: "Secure communication protocols",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "20",
+      title: "AI-driven intrusion detection systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "21",
+      title: "5G/6G secure computational frameworks",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "22",
+      title: "AI in smart grids and energy systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "23",
+      title: "AI-driven wireless and communication systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "24",
+      title: "Intelligent control systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "25",
+      title: "AI for robotics and autonomous systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "26",
+      title: "Intelligent transportation systems",
       type: "talk",
       speaker: "",
       description: "National cuisine and connections",
@@ -113,36 +225,92 @@ useEffect(() => {
 
   const schedule2 = [
     {
-      time: "11",
-      title: "Energy, Sustainability & Climate Change",
+      time: "27",
+      title: "AI in healthcare engineering",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
-      time: "12",
-      title: "Construction and Management Technologies",
+      time: "28",
+      title: "AI-driven manufacturing and Industry 4.0",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "13",
-      title: "Materials, Rare-earth & Critical Minerals",
+      time: "29",
+      title: "Big data analytics for engineering systems",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "14",
-      title: "Smart Cities & Mobility",
+      time: "30",
+      title: "Predictive modeling and forecasting",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "15",
-      title: "Business Management, Business Analytics & Sustainable Management Practices.",
+      time: "31",
+      title: "Time-series analysis in secure systems",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "32",
+      title: "Computational intelligence in physical systems",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "33",
+      title: "AI-based decision support systems",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "34",
+      title: "Intelligent signal and image processing",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "35",
+      title: "AI for environmental monitoring",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "36",
+      title: "Computational intelligence in material science",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "37",
+      title: "AI in structural and mechanical systems",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "38",
+      title: "Secure smart city infrastructures",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "39",
+      title: "AI-driven sustainable engineering systems",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
@@ -162,7 +330,7 @@ useEffect(() => {
               height={40}
               className="h-10 w-auto object-contain rounded-lg"
             /> */}
-            <span className="font-bold text-gray-800">ICAINXT-25</span>
+            <span className="font-bold text-gray-800">ICSACSEA 2026</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <Link href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
@@ -208,6 +376,13 @@ useEffect(() => {
         height={100}
         className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
       />
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/8/8b/AIP_Logo.png"
+        alt="Partner Logo"
+        width={100}
+        height={100}
+        className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
+      />
     </div>
 
     {/* Institute Name */}
@@ -223,7 +398,7 @@ useEffect(() => {
 
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-      National Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-25)</span>
+      International Conference on Secure AI-Driven Computational Systems and Engineering Applications  <span className="text-blue-500">(ICSACSEA 2026)</span>
       <br /> <span className="text-[40px]">(Hybrid Conference)</span>
     </h2>
 
@@ -253,7 +428,7 @@ useEffect(() => {
     <div className="flex flex-col sm:flex-row gap-3 justify-center items-center text-gray-300">
       <div className="flex items-center">
         <CalendarDays className="h-5 w-5 mr-2" />
-        <span className="font-medium">28th and 29th November 2025</span>
+        <span className="font-medium">29th and 30th May 2026</span>
       </div>
       <div className="flex items-center">
         <MapPin className="h-5 w-5 mr-2" />
@@ -349,7 +524,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              About <span className="text-blue-600">ICAINXT-25</span>
+              About <span className="text-blue-600">ICSACSEA 2026</span>
             </h2>
             <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
               <div className="md:w-1/3">
@@ -363,30 +538,30 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-25) 
+                  International Conference on Secure AI-Driven Computational Systems and Engineering Applications (ICSACSEA 2026) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  Scheduled for November 28-29, 2025, this two-day conference will feature keynote speeches, technical 
+                  Scheduled for May 29-30 2026, this two-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 15, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">April 3, 2026</h3>
                     <p className="text-sm text-gray-600">Paper submission Deadline</p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                  {/* <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 20, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">May 15, 2026</h3>
                     <p className="text-sm text-gray-600">Notification of Paper Acceptance</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 22, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">June 15, 2026</h3>
                     <p className="text-sm text-gray-600">Registration Deadline</p>
-                  </div>
+                  </div> */}
                   {/* <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
                     <h3 className="font-bold text-sm text-gray-800">October 30, 2025</h3>
@@ -399,7 +574,7 @@ useEffect(() => {
                   </div> */}
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 28-29, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">May 29-30, 2026</h3>
                     <p className="text-sm text-gray-600">Conference Dates</p>
                   </div>
                 </div>
@@ -630,8 +805,8 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
-              <h3 className="text-xl font-bold mb-4">ICAINXT-25</h3>
-              <p className="text-gray-400">National Conference on AI Innovations for Next Generation Technologies</p>
+              <h3 className="text-xl font-bold mb-4">ICSACSEA 2026</h3>
+              <p className="text-gray-400">International Conference on Secure AI-Driven Computational Systems and Engineering Applications</p>
               <br/>
               <p >Email: <Link href="mailto:icainxt@aiems.edu.in" className=" text-gray-400 hover:underline">icainxt@aiems.edu.in</Link></p>
             </div>
@@ -650,7 +825,7 @@ useEffect(() => {
               <address className="text-gray-400 not-italic">
                 Dr. Kumar B I D<br />
                 Professor & HoD, ISE Dept<br />
-                ICAINXT-26 Organizing Chair<br />
+                ICSACSEA 2026 Organizing Chair<br />
                 Amruta Institute of Engineering and Management Sciences<br />
                 Bangalore, Karnataka, India<br />
                 Email: <Link href="mailto:dr.kumarbid@aiems.edu.in" className="text-blue-500 hover:underline">dr.kumarbid@aiems.edu.in</Link><br />
@@ -659,7 +834,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} ICAINXT-26. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} ICSACSEA 2026. All rights reserved.</p>
           </div>
         </div>
       </footer>
