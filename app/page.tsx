@@ -343,13 +343,13 @@ useEffect(() => {
 
     {/* Buttons */}
     <div className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-6 relative z-10">
-      <Link target="_blank" href={registerUrl}>
+      <Link target="_blank" href="https://drive.google.com/file/d/1CwgGwwAXr_6VjWk5eqyGVc1s5pb3PunC/view?usp=sharing">
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
           Submissions
         </Button>
       </Link>
-      <a href={Flyer.src} target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/1Vb0KfS88VxjJNKupDMbfrh3dvVWseQLk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
           View Flyer
