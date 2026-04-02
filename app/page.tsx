@@ -38,73 +38,144 @@ useEffect(() => {
     const schedule = [
     {
       time: "1",
-      title: "Artificial Intelligence and Data Science",
+      title: "Adversarial machine learning",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
       time: "2",
-      title: "Advanced Computing & Networking",
+      title: "Robust AI models for critical systems",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
       time: "3",
-      title: "Cloud Computing",
+      title: "Secure deep learning architectures",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
     },
     {
       time: "4",
-      title: "Cyber Security",
+      title: "Privacy-preserving AI",
       type: "talk",
       speaker: "",
       description: "Latest advances in quantum technology",
     },
     {
       time: "5",
-      title: "AI Applications in Healthcare, Agriculture & Education",
+      title: "AI security in cyber-physical systems",
       type: "talk",
       speaker: "",
       description: "National cuisine and connections",
     },
+    {
+      time: "6",
+      title: "Analog & Mixed Signal and, RF Circuits",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "7",
+      title: "VLSI for Automotive Circuits and Systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "8",
+      title: "Low Power Digital Systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "9",
+      title: "Hardware & Systems Security",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "10",
+      title: "Wireless Systems, 5G & beyond",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "11",
+      title: "Quantum Computing & Communications",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    
   ]
 
   const schedule1 = [
     {
-      time: "6",
-      title: "Advanced Communication systems and Image Processing",
+      time: "12",
+      title: "Blockchain-enabled secure systems",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
-      time: "7",
-      title: "Robotics and Automation",
+      time: "13",
+      title: "Secure IoT and embedded systems",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "8",
-      title: "AI E-Governance",
+      time: "14",
+      title: "Cybersecurity in intelligent networks",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
     },
     {
-      time: "9",
-      title: "Advanced Manufacturing and Operations Technologies",
+      time: "15",
+      title: "Secure communication protocols",
       type: "talk",
       speaker: "",
       description: "Latest advances in quantum technology",
     },
     {
-      time: "10",
-      title: "VLSI Design & Embedded Systems",
+      time: "16",
+      title: "AI-driven intrusion detection systems",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "17",
+      title: "Renewable Energy & Power Electronics",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "18",
+      title: "Nanoelectronics & Nanotechnology",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "19",
+      title: "Biomedical Electronics Technologies",
+      type: "talk",
+      speaker: "",
+      description: "National cuisine and connections",
+    },
+    {
+      time: "20",
+      title: "Satellite Communication",
       type: "talk",
       speaker: "",
       description: "National cuisine and connections",
@@ -113,40 +184,69 @@ useEffect(() => {
 
   const schedule2 = [
     {
-      time: "11",
-      title: "Energy, Sustainability & Climate Change",
+      time: "21",
+      title: "5G/6G secure computational frameworks",
       type: "talk",
       speaker: "",
       description: "Network with fellow attendees",
     },
     {
-      time: "12",
-      title: "Construction and Management Technologies",
+      time: "22",
+      title: "Numerical methods and optimization techniques",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "13",
-      title: "Materials, Rare-earth & Critical Minerals",
+      time: "23",
+      title: "Intelligent optimization algorithms",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "14",
-      title: "Smart Cities & Mobility",
+      time: "24",
+      title: "Data-driven modeling of dynamic systems",
       type: "talk",
       speaker: "",
       description: "Exploring the next decade of AI innovation",
     },
     {
-      time: "15",
-      title: "Business Management, Business Analytics & Sustainable Management Practices.",
+      time: "25",
+      title: "High-performance computing for AI applications.",
       type: "talk",
       speaker: "",
       description: "Networking opportunity",
     },
+    {
+      time: "26",
+      title: "AI for environmental monitoring.",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "27",
+      title: "Computational intelligence in material science",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "28",
+      title: "Secure smart city infrastructures",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    {
+      time: "29",
+      title: "AI-driven sustainable engineering systems",
+      type: "talk",
+      speaker: "",
+      description: "Networking opportunity",
+    },
+    
   ]
 
   return (
@@ -414,7 +514,7 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Organizing Committee Section */}
+      {/* Organizing Committee Section
 <section id="committee" className="py-16 bg-gray-50">
   <div className="container mx-auto px-4 max-w-6xl">
     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -424,16 +524,16 @@ useEffect(() => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       {/* Chief Patrons */}
-      <div>
+      {/* <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Chief Patrons</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Shri Dr. Veeranna C. Charantimath</li>
           <li>Dr. S. Vidyashankar – Vice Chancellor, VTU</li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Patrons */}
-      <div>
+      {/* <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Patrons</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Shri Mahesh N Athani – Hon. Secretary, BVVS</li>
@@ -441,10 +541,10 @@ useEffect(() => {
           <li>Dr. Rangaswamy B E – Registrar (Academics), VTU</li>
           <li>Dr. T. N. Sreenivasa – Registrar (Evaluation), VTU</li>
         </ul>
-      </div>
+      </div> */}
 
       {/* General Chair */}
-      <div>
+      {/* <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">General Chair</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Dr. Santosh M Muranal – Principal, AIEMS</li>
@@ -453,7 +553,7 @@ useEffect(() => {
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Dr. Rajeshwar S Kadadevaramath – Dean Academic, AIEMS</li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Organizing Chair
       <div>
@@ -463,7 +563,7 @@ useEffect(() => {
         </ul>
       </div> */}
 
-      {/* Technical Program Committee */}
+      {/* Technical Program Committee 
       <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Technical Program Committee</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -477,7 +577,7 @@ useEffect(() => {
         </ul>
       </div>
 
-      {/* Organizing Program Committee */}
+      {/* Organizing Program Committee 
       <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Organizing Program Committee</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -487,6 +587,109 @@ useEffect(() => {
           <li>Mr. Rudra Murthy – Professor & HoD, Civil, AIEMS</li>
           <li>Mr. Shreyas Shivananjappa – Assistant Professor, HOD AIML & Basic Science, AIEMS</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section> */}
+
+{/* Organizing Committee Section */}
+<section id="committee" className="py-16 bg-gray-100 flex justify-center items-center">
+  <div className="w-full max-w-6xl px-4">
+    
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      Conference <span className="text-blue-600">Organizers & Boards</span>
+    </h2>
+
+    {/* Card */}
+    <div className="bg-blue-900 text-white rounded-xl shadow-xl p-10 mx-auto">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        {/* LEFT */}
+        <div className="space-y-8">
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">Chief Patrons</h3>
+            <p className="font-medium">Dr. Veeranna C. Charantimath</p>
+            <p className="text-sm text-gray-300 mb-2">Chairman, BVVS, Bagalkote</p>
+
+            <p className="font-medium">Shri Mahesh N Athani</p>
+            <p className="text-sm text-gray-300">Hon. Secretary, BVVS, Bagalkote</p>
+          </div>
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">Patron</h3>
+            <p className="font-medium">Sri. Mahantesh S Shettar</p>
+            <p className="text-sm text-gray-300">
+              Chairman, AIEMS, Bidadi, Bengaluru
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">General Chairs</h3>
+            <p className="font-medium">Dr. Santosh M Muranal</p>
+            <p className="text-sm text-gray-300 mb-2">Principal, AIEMS</p>
+
+            <p className="font-medium">Dr. Rajeshwar Kadadevaramath</p>
+            <p className="text-sm text-gray-300">
+              Dean of Academic, AIEMS
+            </p>
+          </div>
+
+        </div>
+
+        {/* RIGHT */}
+        <div className="space-y-8">
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">Co-Chair</h3>
+            <p className="font-medium">Dr. Sridhara S B</p>
+            <p className="text-sm text-gray-300">
+              Professor & HOD, CSE Dept., AIEMS
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">Convenors</h3>
+
+            <p className="font-medium">Dr. Veeresh Patil</p>
+            <p className="text-sm text-gray-300 mb-2">
+              Professor & HOD, ECE Dept., AIEMS <br />
+              Senate Member, VTU, Belagavi
+            </p>
+
+            <p className="font-medium">Dr. Mahantesh Mathapati</p>
+            <p className="text-sm text-gray-300 mb-2">
+              Professor, CSE Dept., AIEMS
+            </p>
+
+            <p className="font-medium">Prof. Shreyas Shivannanjappa</p>
+            <p className="text-sm text-gray-300">
+              HOD, AI & ML Dept., AIEMS
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-yellow-400 text-xl font-semibold mb-2">Co-Convenors</h3>
+
+            <p className="font-medium">Dr. Pratibhadevi Tapashetti</p>
+            <p className="text-sm text-gray-300 mb-2">
+              Professor, ECE Dept., AIEMS
+            </p>
+
+            <p className="font-medium">Dr. Sanjana Prasad</p>
+            <p className="text-sm text-gray-300 mb-2">
+              Assoc. Professor, AI & ML Dept., AIEMS
+            </p>
+
+            <p className="font-medium">Prof. Kavya B K</p>
+            <p className="text-sm text-gray-300">
+              Asst. Professor, CSE Dept., AIEMS
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
