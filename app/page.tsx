@@ -162,7 +162,7 @@ useEffect(() => {
               height={40}
               className="h-10 w-auto object-contain rounded-lg"
             /> */}
-            <span className="font-bold text-gray-800">ICAINXT-25</span>
+            <span className="font-bold text-gray-800">ICACSEA 2026</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <Link href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
@@ -223,7 +223,7 @@ useEffect(() => {
 
     {/* Conference Title */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-      National Conference on AI Innovations for Next Generation Technologies <span className="text-blue-500">(ICAINXT-25)</span>
+      International Conference on AI-Driven Computational Systems and Engineering Applications <span className="text-blue-500">(ICACSEA 2026)</span>
       <br /> <span className="text-[40px]">(Hybrid Conference)</span>
     </h2>
 
@@ -253,7 +253,7 @@ useEffect(() => {
     <div className="flex flex-col sm:flex-row gap-3 justify-center items-center text-gray-300">
       <div className="flex items-center">
         <CalendarDays className="h-5 w-5 mr-2" />
-        <span className="font-medium">28th and 29th November 2025</span>
+        <span className="font-medium">29th, 30th May 2026</span>
       </div>
       <div className="flex items-center">
         <MapPin className="h-5 w-5 mr-2" />
@@ -349,7 +349,7 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              About <span className="text-blue-600">ICAINXT-25</span>
+              About <span className="text-blue-600">ICACSEA 2026</span>
             </h2>
             <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
               <div className="md:w-1/3">
@@ -363,7 +363,7 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICAINXT-25) 
+                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICACSEA 2026) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
@@ -374,18 +374,23 @@ useEffect(() => {
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 15, 2025</h3>
-                    <p className="text-sm text-gray-600">Paper submission Deadline</p>
+                    <h3 className="font-bold text-sm text-gray-800">April 15, 2026</h3>
+                    <p className="text-sm text-gray-600">Paper Abstract Submission Deadline</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 20, 2025</h3>
-                    <p className="text-sm text-gray-600">Notification of Paper Acceptance</p>
+                    <h3 className="font-bold text-sm text-gray-800">April 30, 2026</h3>
+                    <p className="text-sm text-gray-600">Full Paper submission deadline</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 22, 2025</h3>
-                    <p className="text-sm text-gray-600">Registration Deadline</p>
+                    <h3 className="font-bold text-sm text-gray-800">May 10, 2026</h3>
+                    <p className="text-sm text-gray-600">Notification of paper acceptance</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
+                    <h3 className="font-bold text-sm text-gray-800">May 15, 2026</h3>
+                    <p className="text-sm text-gray-600">Camera Ready Paper & Registration</p>
                   </div>
                   {/* <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
@@ -399,7 +404,7 @@ useEffect(() => {
                   </div> */}
                   <div className="bg-blue-50 p-4 rounded-lg text-center">
                     <Calendar className="h-8 w-8 mx-auto text-blue-600 mb-2" />
-                    <h3 className="font-bold text-sm text-gray-800">November 28-29, 2025</h3>
+                    <h3 className="font-bold text-sm text-gray-800">May 29,30, 2026</h3>
                     <p className="text-sm text-gray-600">Conference Dates</p>
                   </div>
                 </div>
@@ -450,13 +455,13 @@ useEffect(() => {
         </ul>
       </div>
 
-      {/* Organizing Chair */}
+      {/* Organizing Chair
       <div>
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Organizing Chair</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Dr. Kumar B I D – Professor & HoD, ISE Dept, AIEMS</li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Technical Program Committee */}
       <div>
@@ -630,10 +635,10 @@ useEffect(() => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
-              <h3 className="text-xl font-bold mb-4">ICAINXT-25</h3>
-              <p className="text-gray-400">National Conference on AI Innovations for Next Generation Technologies</p>
+              <h3 className="text-xl font-bold mb-4">ICACSEA 2026</h3>
+              <p className="text-gray-400">International Conference on AI-Driven Computational Systems and Engineering Applications</p>
               <br/>
-              <p >Email: <Link href="mailto:icainxt@aiems.edu.in" className=" text-gray-400 hover:underline">icainxt@aiems.edu.in</Link></p>
+              <p >Email: <Link href="mailto:icacsea2026@gmail.com" className=" text-gray-400 hover:underline">icacsea2026@gmail.com</Link></p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -648,18 +653,18 @@ useEffect(() => {
             <div>
               <h3 className="text-xl font-bold mb-4">Contact</h3>
               <address className="text-gray-400 not-italic">
-                Dr. Kumar B I D<br />
-                Professor & HoD, ISE Dept<br />
-                ICAINXT-26 Organizing Chair<br />
+                Prof. Shreyas Shivananjappa<br />
+                Professor & HoD, AI & ML Dept<br />
+                ICAINXT-26 Convenors<br />
                 Amruta Institute of Engineering and Management Sciences<br />
                 Bangalore, Karnataka, India<br />
-                Email: <Link href="mailto:dr.kumarbid@aiems.edu.in" className="text-blue-500 hover:underline">dr.kumarbid@aiems.edu.in</Link><br />
-                Phone: +91 78924 38079
+                {/* Email: <Link href="mailto:dr.kumarbid@aiems.edu.in" className="text-blue-500 hover:underline">dr.kumarbid@aiems.edu.in</Link><br />
+                Phone: +91 78924 38079 */}
               </address>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} ICAINXT-26. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} ICACSEA-26. All rights reserved.</p>
           </div>
         </div>
       </footer>
