@@ -471,12 +471,12 @@ useEffect(() => {
               </div>
               <div className="md:w-2/3">
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  The National Conference on AI solutions addressing Next Generation Technological Growth (ICACSEA 2026) 
+                  The International Conference on AI solutions addressing Next Generation Technological Growth (ICACSEA 2026) 
                   is a premier global forum bringing together researchers, industry experts, and innovators to explore 
                   cutting-edge advancements in artificial intelligence and its applications.
                 </p>
                 <p className="text-justify text-lg text-gray-700 mb-4">
-                  Scheduled for November 28-29, 2025, this two-day conference will feature keynote speeches, technical 
+                  Scheduled for May 29-30 ,2026, this two-day conference will feature keynote speeches, technical 
                   paper presentations, workshops, and networking opportunities with AI leaders from around the world.
                 </p>
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
