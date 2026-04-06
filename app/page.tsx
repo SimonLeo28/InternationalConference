@@ -1,16 +1,13 @@
 "use client"
-import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CalendarDays, Calendar, MapPin, Users, Globe, Clock, Star, ArrowRight, Play, Mic, Video, Coffee, Award, Ticket, Mail, Menu, CheckCircle, } from "lucide-react"
-import Link from "next/link"
+import { Calendar, CalendarDays, CheckCircle, Clock, MapPin, Menu, Ticket } from "lucide-react"
 import Image from "next/image"
-
-{/** Importing Images */}
-import clgLogo from "./logos/CollegeLogo.jpg"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import aip from "./Images/AIP.png"
+import Hero from "./Images/hero1.jpg"
 import logo1 from "./logos/logo1.jpg"
 import logo2 from "./logos/logo2.jpg"
 import logo3 from "./logos/logo3.jpg"
@@ -19,10 +16,8 @@ import logo5 from "./logos/logo5.jpg"
 import logo6 from "./logos/logo6.jpg"
 import logo7 from "./logos/logo7.jpg"
 import logo8 from "./logos/logo8.jpg"
-import Hero from "./Images/hero1.jpg"
-import Flyer from "./Images/icainxtpic.jpg"
-import Springer from "./Images/springer.jpg"
-import aip from "./Images/AIP.png"
+
+{/** Importing Images */}
 
 
 export default function ConferencePage() {
@@ -866,7 +861,7 @@ useEffect(() => {
               <address className="text-gray-400 not-italic">
                 Prof. Shreyas Shivananjappa<br />
                 Professor & HoD, AI & ML Dept<br />
-                ICAINXT-26 Convenors<br />
+                ICACSEA-26 Convenors<br />
                 Amruta Institute of Engineering and Management Sciences<br />
                 Bangalore, Karnataka, India<br />
                 {/* Email: <Link href="mailto:dr.kumarbid@aiems.edu.in" className="text-blue-500 hover:underline">dr.kumarbid@aiems.edu.in</Link><br />
@@ -875,7 +870,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} ICAINXT-26. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} ICACSEA-26. All rights reserved.</p>
           </div>
         </div>
       </footer>
