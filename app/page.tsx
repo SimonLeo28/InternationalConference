@@ -6,7 +6,6 @@ import { Calendar, CalendarDays, CheckCircle, Clock, MapPin, Menu, Ticket } from
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import aip from "./Images/AIP.png"
 import Hero from "./Images/hero1.jpg"
 import logo1 from "./logos/logo1.jpg"
 import logo2 from "./logos/logo2.jpg"
@@ -304,13 +303,13 @@ useEffect(() => {
         height={100}
         className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
       />
-      <Image
+      {/* <Image
         src={aip}
         alt="Partner Logo"
         width={100}
         height={100}
         className="h-20 w-20 sm:w-auto object-contain rounded-lg shadow-md border-2 border-white bg-white p-1"
-      />
+      /> */}
     </div>
 
     {/* Institute Name */}
@@ -344,7 +343,7 @@ useEffect(() => {
           Submissions
         </Button>
       </Link>
-      <a href="https://drive.google.com/file/d/1cL8fzpPjVhJjEM4sCyJWBZAfKXWM8hQ4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/1_nDJ6QmaTweUSHKsh4VUfGCmAzv0N9SE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 w-full sm:w-auto">
           <Ticket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
           View Flyer
